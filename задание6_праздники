@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN");
+	int a, b;
+	cout << "выбери цифру от 1 до 10 и узнаешь праздник" << endl;
+	cin >> a;
+
+	switch (a)
+	{
+	case 1:
+		cout << "Новый год" << endl;
+		break;
+
+	case 2:
+		cout << "старый новый год " << endl;
+		break;
+
+	case 3:
+		cout << "8 марта" << endl;
+		break;
+    case 4:
+		cout << "рождество" << endl;
+		break;
+	case 5:
+		cout << "23 февраля" << endl;
+		break;
+	case 6:
+		cout << "день матери" << endl;
+		break;
+	case 7:
+	    cout << "14 февраля" << endl;
+		break;
+	case 8:
+		cout << "день независимости" << endl;
+		break;
+	case 9:
+		cout << "9 мая" << endl;
+		break;
+	case 10:
+		cout << "день рождения" << endl;
+		break;
+	default:
+		cout << "кажется это не то число" << endl;
+		break;
+	}
+
+	system("pause"); 
+    return 0;
+}

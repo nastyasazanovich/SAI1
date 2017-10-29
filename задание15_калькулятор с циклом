@@ -1,0 +1,71 @@
+#include "stdafx.h"
+#include<iostream>
+
+
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "RUSSIAN"); 
+
+	double x, y;
+	bool work;
+
+	int exit = 1;
+	work = true;
+	
+
+		cout << "enter x=";
+		cin >> x;
+		cout << "enter y=";
+		cin >> y;
+
+			
+			cout << " if x*y enter *" << endl;
+			cout << " if x/y enter /" << endl;
+			cout << " if x+y enter +" << endl;
+			cout << " if x-y enter -" << endl;
+			
+		char op;
+		cin >> op;
+
+		double z;
+		bool ok = true;
+
+		switch (op)
+		{
+		case '*':
+			z = x*y;
+			break;
+		case '-':
+			z = x - y;
+			break;
+		case '+':
+			z = x + y;
+			break;
+		case '/':
+			if (y == 0)
+			{
+				cout << "error" << endl;
+				system("pause");
+			}
+			else
+				z = x / y;
+			break;
+		default:
+			ok = false;
+			break;
+		}
+		if (ok == true)
+		{
+			cout << "Ответ: ";
+			cout << z << endl;
+			system("pause");
+		}
+		else
+		{
+			cout << "z was not founded" << endl;
+			system("pause");
+		}
+				
+	return 0;
+}

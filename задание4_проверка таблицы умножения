@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+int main()
+{
+    setlocale(LC_ALL, "RUSSIAN");
+    char ch;
+    short int a,b,otv;
+    cout << "введите первое число" << endl;
+    cin >> a;
+    cout << " введите второе число"<<endl;
+    cin >> b;
+    cout << " введите ответ"<<endl;
+    cin >> otv;
+    if (otv == a*b){
+        cout << "правильно";
+    }
+    else cout << "не правильно. правильный ответ: >> " << a*b;
+    return 0;
+ 
+}
